@@ -10,7 +10,7 @@
 - Download and unpack [this](https://github.com/felis/USB_Host_Shield_2.0/releases/tag/1.6.2) archive into `C:\Users\your_username\Documents\Arduino\libraries\USB_Host_Shield_2.0-1.6.2`
 <br></br>
 - Solder 3 contacts on the board to increase the voltage as shown in the image.
-  - [](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_board.png)
+  - ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_board.png)
 <br></br>
 - Open the file `C:\Users\your_username\Documents\Arduino\HID_Arduino\HID_Arduino.ino`
 <br></br>
