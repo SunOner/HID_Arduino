@@ -45,6 +45,8 @@
 <br></br>
 - Then you will need to change the structure of `MYMOUSEINFO` so that the variable `uint16_t dX;` is at the beginning.
 <br></br>
+- In some cases, you will need to change `uint16_t` on the `X axis` or `uint16_t` on the `Y axis` to `uint8_t` .
+<br></br>
 - Do this with all the output data and normalize the structure.
 <br></br>
 - Do not forget to disable the `#define ENABLE_UHS_DEBUGGING 0` in `settings.h` after completing all the steps.
@@ -94,6 +96,8 @@
 - У меня в начале пересылаются байты кнопок мыши, но у вас может пересылаться что-то другое, к примеру координаты мыши по X-горизонтали.
 <br></br>
 - Тогда вам нужно будет изменить структуру `MYMOUSEINFO` так что-бы в начале стояла переменная `uint16_t dX;`.
+<br></br>
+- В некоторых случаях нужно будет изменить `uint16_t` по `оси X` или `uint16_t` по `оси Y` на `uint8_t` .
 <br></br>
 - Проделайте это со всеми выходными данными и приведите структуру в норму.
 <br></br>
