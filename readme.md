@@ -1,9 +1,6 @@
 ### Arduino HID mouse
-
+## ENG
 ## This repository contains HID mouse emulation for the [AI Aimbot](https://github.com/SunOner/yolov8_aimbot).
-## Этот репозиторий содержит HID эмуляцию мыши для [ИИ Аимбота](https://github.com/SunOner/yolov8_aimbot).
-
-#ENG
 - To get started, acquire an `Arduino Leonardo R3 ATMEGA32U4`, `ARDUINO USB HOST SHIELD`, and a soldering iron if you don't have one.
 <br></br>
 - Download and install the Arduino IDE.
@@ -32,17 +29,17 @@
 - Upload the script to the device.
 <br></br>
 - In the Arduino IDE, open the Tools->Serial Monitor tab.
-  - [](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/serial_monitor.png)
+  - ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/serial_monitor.png)
 <br></br>
 - Select 9600 baud.
-  -[](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/baud.png)
+  - ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/baud.png)
 <br></br>
 - You should see the data that the mouse sends to the host shield.
 <br></br>
 - Switch to the `hidcustom.h` tab and look at the `struct MYMOUSEINFO` structure
 <br></br>
 - In my case, it looks like this:
-  -[](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/struct.png)
+  - ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/struct.png)
 <br></br>
 - For me, the mouse button bytes are transmitted first, but your data might be different, like the mouse coordinates on the X-axis, for example.
 <br></br>
@@ -52,7 +49,8 @@
 <br></br>
 - Do not forget to disable the `#define ENABLE_UHS_DEBUGGING 0` in `settings.h` after completing all the steps.
 <br></br>
-#RU
+## RU
+## Этот репозиторий содержит HID эмуляцию мыши для [ИИ Аимбота](https://github.com/SunOner/yolov8_aimbot).
 - Для начала приобритите `Arduino Leonardo R3 ATMEGA32U4`, `ARDUINO USB HOST SHIELD` и паяльник если его нет.
 <br></br>
 - Скачайте и установите Arduino ide.
@@ -62,7 +60,7 @@
 - Скачайте и распакуйте [этот](https://github.com/felis/USB_Host_Shield_2.0/releases/tag/1.6.2) архив и распакуйте в `C:\Users\ваше_имя_пользователя\Documents\Arduino\libraries\USB_Host_Shield_2.0-1.6.2`
 <br></br>
 - Спаяйте на плате 3 контакта чтобы получилось как на изображении. (Для увеличения напряжения)
-	-[](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_board.png)
+	- ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_board.png)
 <br></br>
 - Откройте файл `C:\Users\ваше_имя_пользователя\Documents\Arduino\HID_Arduino\HID_Arduino.ino`
 <br></br>
@@ -81,17 +79,17 @@
 - Загрузите скрипт на устройство.
 <br></br>
 - В Arduino ide откройте вкладку Tools->Serial Monitor.
-	- [](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/serial_monitor.png)
+	- ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/serial_monitor.png)
 <br></br>
 - Выберите 9600 baud
-	-[](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/baud.png)
+	- ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/baud.png)
 <br></br>
 - Вы должны увидеть данные которые пересылает мышка на host shield.
 <br></br>
 - Переключитесь на вкладку `hidcustom.h` и взгляните на структуру `struct MYMOUSEINFO`
 <br></br>
 - В моем случаи это выглядит так:
-	-[](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/struct.png)
+	- ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/struct.png)
 <br></br>
 - У меня в начале пересылаются байты кнопок мыши, но у вас может пересылаться что-то другое, к примеру координаты мыши по X-горизонтали.
 <br></br>
