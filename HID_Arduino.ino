@@ -91,14 +91,6 @@ void setup()
   Mouse.begin();
 }
 
-struct Move_data
-{
-  char task;
-  uint8_t x;
-  uint8_t y;
-};
-
-Move_data move;
 void loop()
 {
   delta[0] = 0;
