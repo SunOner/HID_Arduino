@@ -68,13 +68,20 @@ void MouseRptParser::OnWheelMove(MYMOUSEINFO *mi) {
 }
 
 void ParseSerialCommand(const String& command) {
-    if (command == "c") {
+    if (command == "c")
+    {
         Mouse.click();
-    } else if (command == "r") {
+    }
+    else if (command == "r")
+    {
         Mouse.release();
-    } else if (command == "p") {
+    }
+    else if (command == "p")
+    {
         Mouse.press();
-    } else if (command.startsWith("m")) {
+    }
+    else if (command.startsWith("m"))
+    {
         ExecuteMouseMoveCommand(command);
     }
 }
