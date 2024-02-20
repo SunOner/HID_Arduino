@@ -3,7 +3,7 @@
 ## This repository contains HID mouse emulation for the [AI Aimbot](https://github.com/SunOner/yolov8_aimbot).
 - To get started, acquire an `Arduino Leonardo R3 ATMEGA32U4`, `ARDUINO USB HOST SHIELD`, and a soldering iron if you don't have one.
 <br></br>
-- Download and install the Arduino IDE.
+- Download and install the [Arduino IDE](https://www.arduino.cc/en/software).
 <br></br>
 - Download and unpack the repository archive to `C:\Users\your_username\Documents\Arduino\HID_Arduino`
 <br></br>
@@ -16,7 +16,8 @@
 <br></br>
 - Connect the `ARDUINO USB HOST SHIELD` to the `Arduino Leonardo` and connect the `ARDUINO` to the PC.
 <br></br>
-- In the Arduino IDE, select the device's COM port and upload the script to the Arduino. (click the right arrow button).
+- 1. Select the device. 2. Write "leonardo" in the search engine. 3. Select the device. 4. Select the port to which the device is connected. 5. Download the program to your device.
+![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_ide_select_board_en.png)
 <br></br>
 - Connect the mouse to the host shield.
 <br></br>
@@ -55,7 +56,7 @@
 ## Этот репозиторий содержит HID эмуляцию мыши для [ИИ Аимбота](https://github.com/SunOner/yolov8_aimbot).
 - Для начала приобритите `Arduino Leonardo R3 ATMEGA32U4`, `ARDUINO USB HOST SHIELD` и паяльник если его нет.
 <br></br>
-- Скачайте и установите Arduino ide.
+- Скачайте и установите [Arduino IDE](https://www.arduino.cc/en/software).
 <br></br>
 - Скачайте и распакуйте архив скачанный с репозитория в `C:\Users\ваше_имя_пользователя\Documents\Arduino\HID_Arduino`
 <br></br>
@@ -68,7 +69,8 @@
 <br></br>
 - Подключите плату `ARDUINO USB HOST SHIELD` к `Arduino Leonardo` и подключите к ПК `ARDUINO`.
 <br></br>
-- В Arduino ide выберите COM порт устройства и загрузите скрипт на ардуино. (кнопка стрелочка в право).
+- 1. Выберите устройство. 2. Напишите в поисковике "leonardo". 3. Выберите устройство. 4. Выберите порт к которому подключено устройство. 5. Загрузите программу на устройство.
+![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_ide_select_board_en.png)
 <br></br>
 - Подключите мышь к host shield.
 <br></br>
