@@ -17,7 +17,8 @@ MouseRptParser Prs;
 
 void HandleButtonChange(uint8_t prevState, uint8_t newState, uint8_t button);
 
-void setup() {
+void setup()
+{
     Serial.begin(9600);
     Serial.setTimeout(1);
     Usb.Init();
@@ -25,12 +26,14 @@ void setup() {
     Mouse.begin();
 }
 
-void loop() {
+void loop()
+{
     memset(delta, 0, sizeof(delta));
 
     Usb.Task();
 
-    if (Serial.available() > 0) {
+    if (Serial.available() > 0)
+    {
         String command = Serial.readStringUntil('\n');
         ParseSerialCommand(command);
     }
@@ -38,7 +41,8 @@ void loop() {
     Mouse.move(delta[0], delta[1], delta[2]);
 }
 
-void MouseRptParser::Parse(USBHID *hid, bool is_rpt_id, uint8_t len, uint8_t *buf) {
+void MouseRptParser::Parse(USBHID *hid, bool is_rpt_id, uint8_t len, uint8_t *buf)
+{
     MYMOUSEINFO *pmi = reinterpret_cast<MYMOUSEINFO*>(buf);
 
     HandleButtonChange(prevState.mouseInfo.buttons, pmi->buttons, MOUSE_LEFT);
@@ -47,27 +51,32 @@ void MouseRptParser::Parse(USBHID *hid, bool is_rpt_id, uint8_t len, uint8_t *bu
     HandleButtonChange(prevState.mouseInfo.buttons, pmi->buttons, MOUSE_PREV);
     HandleButtonChange(prevState.mouseInfo.buttons, pmi->buttons, MOUSE_NEXT);
 
-    if (pmi->dX || pmi->dY) {
+    if (pmi->dX || pmi->dY)
+    {
         OnMouseMove(pmi);
     }
 
-    if (pmi->wheel) {
+    if (pmi->wheel)
+    {
         OnWheelMove(pmi);
     }
 
     prevState.bInfo[0] = buf[0];
 }
 
-void MouseRptParser::OnMouseMove(MYMOUSEINFO *mi) {
+void MouseRptParser::OnMouseMove(MYMOUSEINFO *mi)
+{
     delta[0] = mi->dX;
     delta[1] = mi->dY;
 }
 
-void MouseRptParser::OnWheelMove(MYMOUSEINFO *mi) {
+void MouseRptParser::OnWheelMove(MYMOUSEINFO *mi)
+{
     Mouse.move(0, 0, mi->wheel);
 }
 
-void ParseSerialCommand(const String& command) {
+void ParseSerialCommand(const String& command)
+{
     if (command == "c")
     {
         Mouse.click();
@@ -86,7 +95,8 @@ void ParseSerialCommand(const String& command) {
     }
 }
 
-void ExecuteMouseMoveCommand(const String& command) {
+void ExecuteMouseMoveCommand(const String& command)
+{
     String moveCommand = command;
     moveCommand.replace("m", "");
 
@@ -97,14 +107,19 @@ void ExecuteMouseMoveCommand(const String& command) {
     Mouse.move(x, y);
 }
 
-void HandleButtonChange(uint8_t prevState, uint8_t newState, uint8_t button) {
+void HandleButtonChange(uint8_t prevState, uint8_t newState, uint8_t button)
+{
     bool prevPressed = CHECK_BIT(prevState, button);
     bool newPressed = CHECK_BIT(newState, button);
 
-    if (prevPressed != newPressed) {
-        if (newPressed) {
+    if (prevPressed != newPressed)
+    {
+        if (newPressed)
+        {
             Mouse.press(button);
-        } else {
+        } 
+        else
+        {
             Mouse.release(button);
         }
     }
