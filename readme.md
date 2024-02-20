@@ -16,7 +16,11 @@
 <br></br>
 - Connect the `ARDUINO USB HOST SHIELD` to the `Arduino Leonardo` and connect the `ARDUINO` to the PC.
 <br></br>
-- 1. Select the device. 2. Write "leonardo" in the search engine. 3. Select the device. 4. Select the port to which the device is connected. 5. Download the program to your device.
+1. Select the device
+2. Write "leonardo" in the search engine
+3. Select the device
+4. Select the port to which the device is connected
+5. Download the program to your device
 ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_ide_select_board_en.png)
 <br></br>
 - Connect the mouse to the host shield.
@@ -69,7 +73,11 @@
 <br></br>
 - Подключите плату `ARDUINO USB HOST SHIELD` к `Arduino Leonardo` и подключите к ПК `ARDUINO`.
 <br></br>
-- 1. Выберите устройство. 2. Напишите в поисковике "leonardo". 3. Выберите устройство. 4. Выберите порт к которому подключено устройство. 5. Загрузите программу на устройство.
+1. Выберите устройство
+2. Напишите в поисковике "leonardo"
+3. Выберите устройство
+4. Выберите порт к которому подключено устройство
+5. Загрузите программу на устройство
 ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_ide_select_board_en.png)
 <br></br>
 - Подключите мышь к host shield.
