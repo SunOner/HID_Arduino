@@ -20,7 +20,7 @@
 2. Write "leonardo" in the search engine
 3. Select the device
 4. Select the port to which the device is connected
-5. Download the program to your device
+5. Upload the program to your device
 ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_ide_select_board_en.png)
 <br></br>
 - Connect the mouse to the host shield.
