@@ -5,14 +5,14 @@
 <br></br>
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/software).
 <br></br>
-- Download and unpack the repository archive to `C:\Users\your_username\Documents\Arduino\HID_Arduino`
+- Download and unpack the repository archive to `C:\Users\your_username\Documents\Arduino\HID_Arduino` or if you have logitech G-series mouse download [this](https://github.com/SunOner/usb-host-shield-mouse_for_ai_aimbot) and unpack the repository archive to `C:\Users\your_username\Documents\Arduino\hidmousereport`
 <br></br>
 - Download and unpack [this](https://github.com/felis/USB_Host_Shield_2.0/releases/tag/1.6.2) archive into `C:\Users\your_username\Documents\Arduino\libraries\USB_Host_Shield_2.0-1.6.2`
 <br></br>
 - Solder 3 contacts on the board to increase the voltage as shown in the image.
   - ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_board.gif)
 <br></br>
-- Open the file `C:\Users\your_username\Documents\Arduino\HID_Arduino\HID_Arduino.ino`
+- Open the file `C:\Users\your_username\Documents\Arduino\HID_Arduino\HID_Arduino.ino` or `C:\Users\your_username\Documents\Arduino\hidmousereport\hidmousereport.ino` if you have logitech G-series mouse
 <br></br>
 - Connect the `ARDUINO USB HOST SHIELD` to the `Arduino Leonardo` and connect the `ARDUINO` to the PC.
 <br></br>
@@ -25,7 +25,7 @@
 <br></br>
 - Connect the mouse to the host shield.
 <br></br>
-- Test the mouse for functionality. If everything works as it should, then you have been successful and lucky with the mouse model. But if something does not work correctly, continue to the next steps.
+- Test the mouse for functionality. If everything works as it should, then you have been successful and lucky with the mouse model. But if something does not work correctly, continue to the next steps. (For logitech G-series tutorial is ends.)
 <br></br>
 - Open the file `C:\Users\your_username\Documents\Arduino\libraries\USB_Host_Shield_2.0-1.6.2\settings.h` in notepad.
 <br></br>
@@ -62,14 +62,14 @@
 <br></br>
 - Скачайте и установите [Arduino IDE](https://www.arduino.cc/en/software).
 <br></br>
-- Скачайте и распакуйте архив скачанный с репозитория в `C:\Users\ваше_имя_пользователя\Documents\Arduino\HID_Arduino`
+- Скачайте и распакуйте архив скачанный с репозитория в `C:\Users\ваше_имя_пользователя\Documents\Arduino\HID_Arduino` или если у вас мышка logitech G-серии скачайте [this](https://github.com/SunOner/usb-host-shield-mouse_for_ai_aimbot) и распакуйте скачанный архив с репозитория в `C:\Users\ваше_имя_пользователя\Documents\Arduino\hidmousereport`
 <br></br>
 - Скачайте и распакуйте [этот](https://github.com/felis/USB_Host_Shield_2.0/releases/tag/1.6.2) архив и распакуйте в `C:\Users\ваше_имя_пользователя\Documents\Arduino\libraries\USB_Host_Shield_2.0-1.6.2`
 <br></br>
 - Спаяйте на плате 3 контакта чтобы получилось как на изображении. (Для увеличения напряжения)
 	- ![](https://github.com/SunOner/HID_Arduino/blob/main/docs/media/host_shield_board.gif)
 <br></br>
-- Откройте файл `C:\Users\ваше_имя_пользователя\Documents\Arduino\HID_Arduino\HID_Arduino.ino`
+- Откройте файл `C:\Users\ваше_имя_пользователя\Documents\Arduino\HID_Arduino\HID_Arduino.ino` или `C:\Users\ваше_имя_пользователя\Documents\Arduino\hidmousereport\hidmousereport.ino` если у вас мышка logitech G-серии
 <br></br>
 - Подключите плату `ARDUINO USB HOST SHIELD` к `Arduino Leonardo` и подключите к ПК `ARDUINO`.
 <br></br>
@@ -82,7 +82,7 @@
 <br></br>
 - Подключите мышь к host shield.
 <br></br>
-- Проверьте мышь на работоспособность. Если всё работает как нужно то у вас всё получилось и повезло с моделью мыши. Но если что-то работает не правильно вам дальше.
+- Проверьте мышь на работоспособность. Если всё работает как нужно то у вас всё получилось и повезло с моделью мыши. Но если что-то работает не правильно вам дальше. (Для logitech G-серии дальнейшие действия не требуются.)
 <br></br>
 - Откройте в блокноте файл `C:\Users\ваше_имя_пользователя\Documents\Arduino\libraries\USB_Host_Shield_2.0-1.6.2\settings.h`
 <br></br>
