@@ -1,6 +1,6 @@
 ### Arduino HID mouse
 ## ENG
-## This repository contains HID mouse emulation for the [AI Aimbot](https://github.com/SunOner/yolov8_aimbot).
+## This repository contains HID mouse emulation for the [Sunone Aimbot](https://github.com/SunOner/sunone_aimbot).
 - To get started, acquire an `Arduino Leonardo R3 ATMEGA32U4`, `ARDUINO USB HOST SHIELD`, and a soldering iron if you don't have one.
 <br></br>
 - Download and install the [Arduino IDE](https://www.arduino.cc/en/software).
