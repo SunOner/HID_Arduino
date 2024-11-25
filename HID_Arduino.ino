@@ -19,7 +19,7 @@ void HandleButtonChange(uint8_t prevState, uint8_t newState, uint8_t button);
 
 void setup()
 {
-    Serial.begin(9600);
+    Serial.begin(57600);
     Serial.setTimeout(1);
     Usb.Init();
     HidMouse.SetReportParser(0, &Prs);
