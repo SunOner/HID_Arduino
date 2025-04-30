@@ -12,7 +12,7 @@ signed char delta[3] = {0, 0, 0};
 
 USB Usb;
 USBHub Hub(&Usb);
-HIDBoot<USB_HID_PROTOCOL_MOUSE> HidMouse(&Usb);
+HIDBoot<USB_HID_PROTOCOL_MOUSE> HidMouse(&Usb, true);
 MouseRptParser Prs;
 
 void HandleButtonChange(uint8_t prevState, uint8_t newState, uint8_t button);
