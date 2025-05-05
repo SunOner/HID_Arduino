@@ -60,7 +60,8 @@ void MouseRptParser::Parse(USBHID *hid, bool is_rpt_id, uint8_t len, uint8_t *bu
     {
         OnWheelMove(pmi);
     }
-
+    
+    prevState.mouseInfo.buttons = pmi->buttons;
     prevState.bInfo[0] = buf[0];
 }
 
